@@ -1,5 +1,5 @@
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+const canvasEl = document.getElementById('canvas');
+const ctx = canvasEl.getContext('2d');
 
 const BLACK = '#111';
 const WHITE = '#eee';
@@ -80,7 +80,7 @@ const utils = {
     windowSize = Math.min(window.innerWidth, window.innerHeight);
     baseRadius = origin = (windowSize / 2 - 10);
     basePixelSize = windowSize / 500;
-    canvas.height = canvas.width = windowSize;
+    canvasEl.height = canvasEl.width = windowSize;
   },
 
   throttle(fn, waitTime) {
