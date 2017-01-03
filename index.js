@@ -6,6 +6,9 @@ const WHITE = '#eee';
 const RED = '#e11';
 const SILVER = '#c0c0c0';
 
+
+////////// CIRCLES
+
 const CLOCK_FACE = {
   size: 0.98,
   thickness: 3,
@@ -37,6 +40,9 @@ const CENTRAL_SCREW = {
   lineColor: SILVER,
   fillColor: SILVER
 };
+
+
+////////// SEGMENTS
 
 const LARGE_TICK = {
   start: 0.76,
@@ -110,7 +116,7 @@ const utils = {
     return {
       x: origin + dx,
       y: origin + dy
-    }
+    };
   },
 
   drawRadialSegment(minute, options) {
